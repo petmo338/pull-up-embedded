@@ -25,3 +25,4 @@ header{position:relative}
 .lang{position:absolute;top:2rem;right:1.5rem;font-family:var(--heading);font-size:.9rem}
 .lang a{color:var(--black);text-decoration:none;margin-left:.8rem}
 .lang a[aria-current]{text-decoration:underline}
+.areas .terms{margin-top:1rem;font-family:var(--heading);font-size:.9rem}
