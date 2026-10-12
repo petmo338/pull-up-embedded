@@ -1,8 +1,17 @@
 baseURL = 'https://pull-up.se/'
-locale = 'sv-SE'
 title = 'Pull-up Embedded'
+defaultContentLanguage = 'sv'
 disableKinds = ['taxonomy', 'term', 'RSS', 'sitemap']
 
 [params]
-description = 'Pull-up Embedded: expertis inom Kubernetes, airgap, GitOps, CI/CD och monitorering, samt embedded och nätverk.'
 email = 'info@pull-up.se'
+
+[languages.sv]
+  locale = 'sv-SE'
+  label = 'Svenska'
+  weight = 1
+
+[languages.en]
+  locale = 'en-GB'
+  label = 'English'
+  weight = 2

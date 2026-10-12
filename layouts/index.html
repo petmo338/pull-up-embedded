@@ -1,59 +1,62 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="{{ .Language.Lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Site.Title }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="description" content="{{ i18n "meta_description" }}">
+  {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{ end }}
   <link rel="icon" href="{{ "images/pull-up-embedded-logo.svg" | relURL }}" type="image/svg+xml">
   {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 </head>
 <body>
   <header class="wrap">
+    <nav class="lang" aria-label="Language">{{ range .AllTranslations }}<a href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}"{{ if eq .Language.Lang $.Language.Lang }} aria-current="true"{{ end }}>{{ .Language.Lang | upper }}</a>{{ end }}</nav>
     <img class="logo" src="{{ "images/pull-up-embedded-logo.svg" | relURL }}" alt="Pull-up Embedded" width="266" height="73">
   </header>
 
   <main>
     <section class="wrap intro">
       <h1>Pull-up Embedded</h1>
-      <p>Expertis inom Kubernetes, airgap, GitOps, CI/CD och monitorering av dessa system. Vi har också djup kunskap inom embedded och nätverk.</p>
+      <p>{{ i18n "intro" }}</p>
     </section>
 
-    <section class="areas" aria-label="Kompetensområden">
+    <section class="areas" aria-label="{{ i18n "areas" }}">
       <article class="navy">
-        <h2>Kubernetes</h2>
-        <p>Utformning och drift av Kubernetes-kluster, både lokalt och i moln. Erfarenhet av AKS, k3s, Cluster API, Helm, Terraform och Docker.</p>
+        <h2>{{ i18n "kubernetes" }}</h2>
+        <p>{{ i18n "kubernetes_text" }}</p>
       </article>
       <article class="violet">
-        <h2>Airgap</h2>
-        <p>Installation och drift i miljöer utan anslutning till internet, lokalt och i VPC, med krav som CMMC och FIPS.</p>
+        <h2>{{ i18n "airgap" }}</h2>
+        <p>{{ i18n "airgap_text" }}</p>
       </article>
       <article class="plum">
-        <h2>GitOps</h2>
-        <p>Konfiguration och driftsättning som versionshanteras i git.</p>
+        <h2>{{ i18n "gitops" }}</h2>
+        <p>{{ i18n "gitops_text" }}</p>
       </article>
       <article class="black">
-        <h2>CI/CD</h2>
-        <p>Pipelines för bygge, test och leverans i Azure DevOps och GitLab, med infrastruktur som kod (Bicep, Terraform), SBOM, signering, Vault och Artifactory.</p>
+        <h2>{{ i18n "cicd" }}</h2>
+        <p>{{ i18n "cicd_text" }}</p>
       </article>
       <article class="navy">
-        <h2>Monitorering</h2>
-        <p>Övervakning och larm för plattformar, kluster och mätdata, med Grafana, Prometheus, Loki, ELK och tidsseriedatabaser.</p>
+        <h2>{{ i18n "monitoring" }}</h2>
+        <p>{{ i18n "monitoring_text" }}</p>
       </article>
       <article class="violet">
-        <h2>Embedded</h2>
-        <p>Utveckling av inbyggda system i C, C++ och Python på Linux och Yocto, från hårdvaruuppstart, U-Boot och systemd till secure boot. Erfarenhet från bland annat fordons- och mobilplattformar.</p>
+        <h2>{{ i18n "embedded" }}</h2>
+        <p>{{ i18n "embedded_text" }}</p>
       </article>
       <article class="plum">
-        <h2>Nätverk</h2>
-        <p>Nätverk och VPN med WireGuard, inklusive routing för flera kunder.</p>
+        <h2>{{ i18n "networking" }}</h2>
+        <p>{{ i18n "networking_text" }}</p>
       </article>
     </section>
 
     <section id="kontakt" class="contact">
       <div class="wrap">
-        <h2>Kontakt</h2>
+        <h2>{{ i18n "contact" }}</h2>
         <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
       </div>
     </section>
