@@ -15,5 +15,5 @@ monitoring_text = 'Övervakning och larm för plattformar, kluster och mätdata,
 embedded = 'Embedded'
 embedded_text = 'Utveckling av inbyggda system i C, C++ och Python på Linux och Yocto, från hårdvaruuppstart, U-Boot och systemd till secure boot. Kommunikation över CAN och Ethernet. Erfarenhet från bland annat fordons- och mobilplattformar.'
 networking = 'Nätverk'
-networking_text = 'Nätverk för kluster, plattformar och inbyggda system: design, routing och felsökning. VPN med WireGuard, inklusive routing för flera kunder, och dual-stack med IPv4 och IPv6. Design och utrullning av WiFi och nätverk i större byggnader och anläggningar: täckningsplanering, placering av accesspunkter, PoE-switchning, gateway och brandvägg, inomhus och utomhus. CAN och Ethernet i inbyggda system.'
+networking_text = 'Nätverk för kluster, plattformar och inbyggda system: design, routing och felsökning. VPN med WireGuard och routing mellan separata nät, och dual-stack med IPv4 och IPv6. Design och utrullning av WiFi och nätverk i större byggnader och anläggningar: täckningsplanering, placering av accesspunkter, PoE-switchning, gateway och brandvägg, inomhus och utomhus. CAN och Ethernet i inbyggda system.'
 networking_terms = 'IPv6, IPv4, WireGuard, VPN, routing, VLAN, DNS, DHCP, WiFi, PoE, Ethernet, CAN, brandväggar, nftables, lastbalansering, CNI, Cilium, TLS, mTLS'
