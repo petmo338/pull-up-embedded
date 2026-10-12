@@ -15,5 +15,5 @@ monitoring_text = 'Monitoring and alerting for platforms, clusters and measureme
 embedded = 'Embedded'
 embedded_text = 'Development of embedded systems in C, C++ and Python on Linux and Yocto, from hardware bring-up, U-Boot and systemd to secure boot. Experience from automotive and mobile platforms, among others.'
 networking = 'Networking'
-networking_text = 'Networking for clusters, platforms and embedded systems: design, routing and troubleshooting. VPN with WireGuard, including routing for multiple customers, and dual-stack with IPv4 and IPv6.'
-networking_terms = 'IPv6, IPv4, WireGuard, VPN, routing, BGP, VLAN, VXLAN, DNS, DHCP, firewalls, nftables, load balancing, CNI, Cilium, MetalLB, TLS'
+networking_text = 'Networking for clusters, platforms and embedded systems: design, routing and troubleshooting. VPN with WireGuard, including routing for multiple customers, and dual-stack with IPv4 and IPv6. Planning and rollout of WiFi and networks in larger premises. CAN and Ethernet in embedded systems.'
+networking_terms = 'IPv6, IPv4, WireGuard, VPN, routing, VLAN, DNS, DHCP, WiFi, Ethernet, CAN, firewalls, nftables, load balancing, CNI, Cilium, TLS, mTLS'
