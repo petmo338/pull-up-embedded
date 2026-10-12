@@ -1,0 +1,8 @@
+baseURL = 'https://pull-up.se/'
+locale = 'sv-SE'
+title = 'Pull-up Embedded'
+disableKinds = ['taxonomy', 'term', 'RSS', 'sitemap']
+
+[params]
+description = 'Pull-up Embedded: expertis inom Kubernetes, airgap, GitOps, CI/CD och monitorering, samt embedded och nätverk.'
+email = 'info@pull-up.se'

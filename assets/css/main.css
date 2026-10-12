@@ -1,0 +1,23 @@
+:root{--black:#1c1c1b;--navy:#27406b;--violet:#665685;--plum:#863b6b;--grey:#b4b4b4;--white:#fff;--heading:Calibri,Carlito,"Segoe UI",sans-serif;--body:"Calibri Light",Calibri,Carlito,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html{font-size:20px}
+body{margin:0;background:var(--white);color:var(--black);font:300 1rem/1.6 var(--body)}
+h1,h2{font-family:var(--heading);font-weight:400;margin:0 0 .4em;line-height:1.2}
+h1{font-size:2.4rem}
+h2{font-size:1.4rem}
+p{margin:0 0 1em}
+a{color:var(--navy)}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+header{padding-top:2rem;padding-bottom:1rem}
+.logo{display:block;width:266px;max-width:70%;height:auto}
+.intro{padding-top:3rem;padding-bottom:3rem}
+.intro p{max-width:40rem;font-size:1.2rem}
+.areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.areas article{padding:2.5rem 1.5rem;color:var(--white)}
+.areas p{margin:0}
+.navy{background:var(--navy)}.violet{background:var(--violet)}.plum{background:var(--plum)}.black{background:var(--black)}
+.contact{background:var(--grey);color:var(--black);padding:3rem 0}
+.contact p{margin:0;font-size:1.2rem}
+.contact a{color:var(--black)}
+footer{padding-top:1.5rem;padding-bottom:1.5rem;font-size:.8rem}
+.areas article:last-child{grid-column:1/-1}

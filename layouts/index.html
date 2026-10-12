@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <link rel="icon" href="{{ "images/pull-up-embedded-logo.svg" | relURL }}" type="image/svg+xml">
+  {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+</head>
+<body>
+  <header class="wrap">
+    <img class="logo" src="{{ "images/pull-up-embedded-logo.svg" | relURL }}" alt="Pull-up Embedded" width="266" height="73">
+  </header>
+
+  <main>
+    <section class="wrap intro">
+      <h1>Pull-up Embedded</h1>
+      <p>Expertis inom Kubernetes, airgap, GitOps, CI/CD och monitorering av dessa system. Vi har också djup kunskap inom embedded och nätverk.</p>
+    </section>
+
+    <section class="areas" aria-label="Kompetensområden">
+      <article class="navy">
+        <h2>Kubernetes</h2>
+        <p>Uppbyggnad och drift av Kubernetes-kluster.</p>
+      </article>
+      <article class="violet">
+        <h2>Airgap</h2>
+        <p>Installation och drift i miljöer utan anslutning till internet.</p>
+      </article>
+      <article class="plum">
+        <h2>GitOps</h2>
+        <p>Konfiguration och driftsättning som versionshanteras i git.</p>
+      </article>
+      <article class="black">
+        <h2>CI/CD</h2>
+        <p>Pipelines för bygge, test och leverans.</p>
+      </article>
+      <article class="navy">
+        <h2>Monitorering</h2>
+        <p>Övervakning av plattformar, kluster och pipelines.</p>
+      </article>
+      <article class="violet">
+        <h2>Embedded</h2>
+        <p>Utveckling av inbyggda system.</p>
+      </article>
+      <article class="plum">
+        <h2>Nätverk</h2>
+        <p>Konfiguration och felsökning av nätverk.</p>
+      </article>
+    </section>
+
+    <section id="kontakt" class="contact">
+      <div class="wrap">
+        <h2>Kontakt</h2>
+        <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">Pull-up Embedded</footer>
+</body>
+</html>
